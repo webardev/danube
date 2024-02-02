@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: white;
+    box-shadow: 0px 1px 10px #0000001c;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+}
+
+.nav-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-content a{
+    color: black;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+
+.nav-content button{
+    background-color: #cd2721;
+    color: white;
+    padding: 15px 20px;
+    font-size: 2.5vh;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-content button:hover{
+    background-color: black;
+}
+
+
+
+swiper-container {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+swiper-container {
+     --swiper-navigation-size: 20px;
+     --swiper-navigation-top-offset: 50%;
+     --swiper-navigation-sides-offset: 10px;
+    --swiper-theme-color: white;
+
+ }
+
+
+/* .swiper-button-next svg,
+.swiper-button-prev svg{
+    background-color: red!important;
+} */
+
+
+
+.mySwiper{
+    cursor: pointer;
+}
+
+
+
+.ads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5rem 0rem;
+}
+
+.main-ad img{
+    width: 70rem;
+}
+.sub-ad{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.ad{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub-ad .ad img{
+    width: 34.4rem;
+}
+
+.ad a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact{
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0rem;
+}
+
+.contact-content{
+    width: 80%;
+}
+
+.name, .info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.message{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-content h1{
+    font-weight: 100;
+    text-align: center;
+    font-size: 3rem;
+}
+.contact input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.671);
+    background-color: transparent;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+select{
+    width: 40%;
+}
+.contact-des{
+    font-size: 13px;
+    margin: 30px 0px;
+    opacity: .7;
+    text-align: center;
+}
+.btn{
+    background-color: #cd2721;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2.5vh;
+    border: none;
+    width: 40%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+.projects{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.project-content{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-top: 50px;
+    height: 100%;
+}
+
+.project-card{
+    height: 23.8rem;
+    width: fit-content;
+    background-color: green;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+}
+.project-card img{
+    width: 16rem;
+    height: auto;
+}
+
+.project-des{
+    width: 15rem;
+    height: 23.8rem;
+    line-height: 1;
+    background-color: #0000007c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    text-align: center;
+    transition: 0.5s;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+}
+.project-des p{
+    line-height: 1.3;
+}
+
+.project-card:hover .project-des{
+    bottom: 0%;
+}
+
+
+
+
+
+.community{
+    padding: 50px 0px;
+}
+.community h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.community-content {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.community-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.community-card {
+    width: 80%;
+}
+
+.community-card:nth-child(2n) {
+    width: 60%;
+}
+
+.community-card:nth-child(3n) {
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.story{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0px;
+}
+
+.story-video img{
+    width: 30rem;
+}
+
+.story-content{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.story-info h1{
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.story-info p{
+    margin: 20px 0px;
+    font-size: 1.3rem;
+    opacity: .7;
+}
+
+.experience, .broker{
+    background-color: #fef8fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 11rem;
+}
+
+.experience img{
+    width: 25rem;
+}
+
+.exp-content img{
+    width: 13rem;
+}
+.exp-content p{
+    margin: 15px 0px;
+    font-size: 1.3rem;
+    opacity: .7;
+}
+.exp-content .btn{
+    width: fit-content;
+    padding: 13px 50px;
+}
+
+.broker img{
+    width: 25rem;
+}
+.broker-content{
+    width: 100%;
+}
+
+.broker-content h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.broker-content p{
+     margin: 20px 0px;
+    font-size: 1.3rem;
+    opacity: .7;
+}
+
+.broker-content .btn{
+    width: fit-content;
+    padding: 13px 40px;
+}
+
+.news{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    padding: 5rem 0rem;
+}
+
+.news-card{
+    width: 27%;
+}
+
+.news-card img{
+    width: 23rem;
+}
+
+.news-banner h1{
+    font-weight: 100;
+    font-size: 3rem;
+}
+.news-card h2{
+    font-size: 1.3rem;
+}
+.news-card p{
+    margin: 15px 0px;
+    font-size: 1.3rem;
+    opacity: .7;
+    width: 100%;
+}
+
+.news-card a{
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.join{
+    width: 100%;
+    height: 200px;
+    border-color: rgba(0, 0, 0, 0.26);
+    border-style: solid;
+    border-width: 1px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 13rem;
+    padding-bottom: 8rem;
+}
+.join p{
+    margin: 5px 0px;
+    font-size: 1.5rem;
+    opacity: .7;
+}
+
+.join .btn{
+    width: fit-content;
+    padding: 10px 50px;
+    margin-top: 10px;
+}
+
+.footer{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 6rem 3rem;
+    gap: 5rem;
+    background: url("https://danubeproperties.ae/assets/dist/images/footer_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.foot-logo img{
+    width: 13rem;
+}
+.foot-sect{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.foot-sect p{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.foot-sect a{
+    color: black;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.social-head{
+    margin-top: 30px;
+}
+
+.social i{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
